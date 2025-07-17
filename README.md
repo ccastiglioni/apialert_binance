@@ -33,3 +33,42 @@ Este projeto é um bot em Python que monitora variações abruptas (pumps) em al
 ```bash
 git clone https://github.com/seu-usuario/altcoin-scalping-bot.git
 cd altcoin-scalping-bot
+```
+
+### Crie um ambiente virtual (opcional, mas recomendado)
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+###  Instale as dependências
+```bash
+pip install requests python-binance
+```
+
+###  Webhook do Discor, no seu servidor do Discord:
+- Vá até o canal desejado.
+- Envia alertas automáticos para o Discord.
+- Clique em Editar canal > Integrações > Webhooks.
+- Crie um novo webhook e copie o link.
+- No código alerta.py, substitua o valor de DISCORD_WEBHOOK_URL pelo seu link de webhook:
+```bash
+DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/SEU_WEBHOOK_AQUI'
+```
+
+### Parâmetros principais
+```bash
+VARIACAO_MINIMA = 3  # porcentagem mínima para enviar alerta
+INTERVALO_CANDLE = Client.KLINE_INTERVAL_1MINUTE
+INTERVALO_CHECAGEM = 60  # segundos entre cada verificação
+
+PARES_MONITORADOS = [
+    'SIGNUSDT', 'DOGEUSDT', 'PEPEUSDT', ...
+]
+```
+
+
+###  Execução
+```bash
+python alerta.py
+```
