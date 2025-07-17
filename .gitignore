@@ -1,22 +1,41 @@
-node_modules/
-dist/
-oldsite/
-realmoneywp/
+# Ambiente virtual
 venv/
+ENV/
+env/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Arquivos temporários e backups
 *.log
-*.jar
-target/
-dist/
+*.tmp
+*.swp
+*.bak
+*.old
+
+# Diretórios de configuração de IDEs
+.vscode/
 .idea/
-TEST*.xml
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos do sistema
 .DS_Store
 Thumbs.db
-*.app
-*.exe
-*.war
-*.mp4
-*.tiff
-*.avi
-*.flv
-*.mov
-*.wmv
+
+# Arquivos de pacotes Python
+*.egg-info/
+dist/
+build/
+
+# Arquivos de configuração do pip
+pip-log.txt
+
+# Jupyter Notebooks checkpoints (caso use no futuro)
+.ipynb_checkpoints/
+
+# Configurações específicas do Git
+*.orig
+
