@@ -16,6 +16,7 @@ PARES_MONITORADOS = [
     'DOGEUSDT',
     'PEPEUSDT',
     'SHIBUSDT',
+    'OMUSDT',
     'PENDLEUSDT',
     'HUMAUSDT',
     'QNTUSDT',
